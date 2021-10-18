@@ -1,7 +1,7 @@
-const daysEl = document.getElementById("days")
-const hoursEl= document.getElementById("hours")
-const minsEl= document.getElementById("mins")
-const secondsEl= document.getElementById("seconds")
+const daysEl = document.getElementById("days");
+const hoursEl= document.getElementById("hours");
+const minsEl= document.getElementById("mins");
+const secondsEl= document.getElementById("seconds");
 
 
 
@@ -17,10 +17,11 @@ function countdown(){
     const mins = Math.floor((TotalSeconds / 60)) % 60;
     const seconds = Math.floor((TotalSeconds % 60)) 
     
- daysEl.innerHTML = days;
+ 
+daysEl.innerHTML = days;
 hoursEl.innerHTML = hours;
- minsEl.innerHTML = mins;
-secondsEl.innerHTML = seconds;
+minsEl.innerHTML = mins;
+seconds.innerHTML = seconds;
 }
 
 
