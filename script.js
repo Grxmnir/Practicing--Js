@@ -6,7 +6,7 @@ const secondsEl= document.getElementById("seconds");
 
 
 
-const christmas = "25 Dec 2021";
+const christmas = "16 Dec 2021";
 
 function countdown(){
     const ChristmasDate = new Date(christmas);
@@ -21,7 +21,7 @@ function countdown(){
 daysEl.innerHTML = days;
 hoursEl.innerHTML = hours;
 minsEl.innerHTML = mins;
-seconds.innerHTML = seconds;
+secondsEl.innerHTML = seconds;
 }
 
 
