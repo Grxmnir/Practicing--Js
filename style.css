@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Festive&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 body{
     background-image:url("./christmas.jpg");
@@ -17,6 +18,9 @@ body{
 .countdown-container{
     
 display:flex;
+border:2px solid #EEAFE1;
+border-radius: 20px;
+background-color:#EAD3E5  
 
 
 }
@@ -25,6 +29,7 @@ h1{
     font-size:4rem;
     margin-top: -10rem;
     font-weight: normal;
+    margin-top:2rem;
 
 }
 
@@ -39,6 +44,7 @@ h1{
 
 .countdown-el {
     text-align: center;
+    color: #363235 ;
     
 
 }
@@ -47,3 +53,31 @@ h1{
     font-size:2rem;
 }
 
+h2{
+    font-size:3rem;
+    font-family: 'Italianno', cursive;
+    
+}
+
+
+/*shaking animation for santa*/
+.shake {
+    animation: shake-animation 4.72s ease infinite;
+    transform-origin: 50% 50%;
+  }
+  .santa {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+
+  }
+  @keyframes shake-animation {
+     0% { transform:translate(0,0) }
+    1.78571% { transform:translate(5px,0) }
+    3.57143% { transform:translate(0,0) }
+    5.35714% { transform:translate(5px,0) }
+    7.14286% { transform:translate(0,0) }
+    8.92857% { transform:translate(5px,0) }
+    10.71429% { transform:translate(0,0) }
+    100% { transform:translate(0,0) }
+  }
