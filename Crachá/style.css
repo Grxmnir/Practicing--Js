@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
+
+
+body{
+    background-color:#363235
+}
+
+.container{
+    max-width:375px;
+    border:5px solid white;
+    text-align: center;
+    border-radius: 20px;
+    margin-left:30rem;
+  
+   
+}
+
+#dejota{
+    position:absolute;
+    top: 10rem;
+    left:37rem;
+    border-radius:50%;
+    width:175px;
+    height:auto;
+    
+    
+}
+
+#background{
+    position:relative;
+    
+    z-index:-1;
+    
+    
+}
+
+#name {
+    color:white;
+    position:absolute;
+    text-align:center;
+    bottom:20rem;
+    margin-left:5rem;
+    font-family: 'Noto Sans Mono', monospace;
+    
+}
+
+#github-profile{
+
+color:#988994;
+text-align:center;
+bottom:19rem;
+right:50rem;
+font-family: 'Noto Sans Mono', monospace;
+position:absolute;
+
+
+}
+#github-logo{
+    position:absolute;
+   bottom:19rem;
+   right: 55rem;
+}
+
+#description{
+    position:absolute;
+    bottom: 15rem;
+    margin:auto;
+    width:20%;
+    left:32rem;
+    color:white;
+
+   
+}
