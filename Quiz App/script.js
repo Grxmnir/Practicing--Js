@@ -62,9 +62,9 @@ function loadQuiz(){
 
 }
 
-SubmitBtn.addEventListener(click, ()=>{
-    currentQuiz++;
-})
+SubmitBtn.addEventListener("click", () => {
+        currentQuiz++;
+    })
 
 
 loadQuiz();
