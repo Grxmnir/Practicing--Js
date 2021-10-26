@@ -1,0 +1,101 @@
+body{
+    background-color: #A9C9FF;
+background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+display:flex;
+margin: 0;
+justify-content:center;
+align-items: center;
+min-height:100vh;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    width:30%;
+}
+
+.container{
+background-color: white;
+width:40%;
+border:none;
+border-radius:15px;
+box-shadow: 0 0 5px rgba(0,0,0,0.8)
+}
+
+.fav-container{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    
+}
+
+
+header{
+    padding:1rem;
+    display:flex;
+    justify-content:end;
+    align-items:center;
+}
+
+
+header input{
+    border:none;
+    background-color:#eef;
+    padding: 0.3rem;
+    border-radius:5px;
+
+}
+
+header button{
+    border:none;
+    background-color:transparent;
+    padding:1rem;
+    cursor:pointer;
+    
+}
+
+
+.fav-meals{
+    display:flex;
+    padding:0;
+    flex-direction:row;
+    justify-content:space-around;
+    margin:25px;
+
+
+
+}
+.fav-meals img{
+    width:100px;
+    border-radius:50%;
+    object-fit:cover;
+    height:100px;
+}
+
+
+.meals img{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+li span{
+    text-align:center;
+    margin-bottom: 5rem;
+}
+
+
+
+
+li{
+    list-style-type: none;
+}
