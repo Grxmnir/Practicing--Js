@@ -4,17 +4,26 @@ const APIURL ="https://api.themoviedb.org/3/discover/movie?sort_by=popularity.de
 
     const SEARCHAPI ="https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";
 
-const main = document.querySelector("main")
+const main = document.getElementById("main");
+const search = document.getElementById("search");
+const form = document.getElementById("form");
 
+//Get the fav movies initially
+getMovies(APIURL);
     
-    async function getMovies(){
+    async function getMovies(url){
 
-       const resp = await fetch(APIURL);
+       const resp = await fetch(url);
        const respData = await resp.json();
 
-console.log(respData);
+       showMovies(respData.results);
 
-respData.results.forEach((movie)=>{
+       function showMovies(movies) {
+        // clear main
+        main.innerHTML = "";
+    
+
+movies.forEach((movie)=>{
 
 
     const movieEl = document.createElement("div");
@@ -30,22 +39,15 @@ respData.results.forEach((movie)=>{
        
     </div>
     <p>${movie.overview}</p>
-    
-    
-    
-    
-    
+
     
     `
 main.appendChild(movieEl);
 
 
 })
-
-
-       
-      
-       return respData;
+        
+}
     };
 
     function getClassByRate(vote){
@@ -59,5 +61,18 @@ main.appendChild(movieEl);
             return "red";
         }
     }
-    getMovies();
+
+
+    form.addEventListener("submit", (e) =>{
+        e.preventDefault();
+   
+      const searchTerm = search.value;
+
+      if(searchTerm){
+          getMovies(SEARCHAPI + searchTerm)
+      }
+      search.value="";
+
+    })
+    
 
