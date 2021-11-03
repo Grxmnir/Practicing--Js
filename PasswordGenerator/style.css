@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@200&family=Roboto+Condensed:wght@300&display=swap');
+
+
+
+body{
+    margin: 0;
+    font-family:"Poppins",sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height:100vh;
+    background-color:rgb(87, 69, 192);
+    color:white;
+    font-weight:bold;
+}
+
+.main-container{
+    background-color: rgb(46, 12, 80);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    min-width: 400px;
+    
+    
+}
+
+#length{
+    width:12%;
+
+
+}
+
+
+.password{
+    background-color:rgb(92, 42, 141);
+    height:40px;
+    width:92%;
+    position:relative;
+    display:flex;
+    align-items:center;
+    padding:1rem;
+    justify-content:center;
+    
+    
+}
+#clipboard{
+    position:absolute;
+    bottom:0;
+    transform:translate(-50%,50%);
+    left:12rem;
+    color:purple;
+    background-color:  white;
+    border-radius:5px;
+    font-family:inherit;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    font-weight:bold;
+}
+
+
+.password-header{
+
+    padding:1rem;
+}
+
+.password-body{
+    padding:1rem;
+}
+
+.form-control{
+    display:flex;
+    justify-content:space-between;
+    margin:15px;
+}
+
+.generate{
+    display:block;
+    background-color:white;
+    color:rebeccapurple;
+    font-weight:bold;
+    font-family: inherit;
+    width:100%;
+    border-radius:5px;
+    height:50px;
+    font-size:25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
