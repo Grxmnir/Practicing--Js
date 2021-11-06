@@ -1,0 +1,56 @@
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0;
+    height:100vh;
+    font-family:"Gill Sans",sans-serif;
+}
+
+
+
+
+button{
+    background-color:mediumseagreen;
+    border:none;
+    padding:0.5rem 1rem;
+    position:fixed;
+    right:20px;
+    top:20px;
+    color:white;
+    transition: transform 0.5s ease-in-out;
+
+}
+button.active{
+    transform:translateX(-100px);
+   
+}
+
+nav{
+    background-color:mediumseagreen;
+    padding:2rem;
+    height:100vh;
+    position:fixed;
+    right:0;
+    top:0;
+    transform:translateX(100%);
+    transition: transform 0.5s ease-in-out
+    
+
+}
+nav.active{
+    transform:translateX(0)
+}
+
+nav li{
+    list-style-type: none;  
+    color:white;
+}
+
+nav ul{
+    padding:0;
+    margin: 0;
+    
+}
+
+
