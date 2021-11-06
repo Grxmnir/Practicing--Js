@@ -1,0 +1,22 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+    height:100vh;
+}
+
+.container{
+    position:fixed;
+   
+}
+
+.toast{
+    position:fixed;
+    background-color:rebeccapurple;
+    padding:2rem;
+    color:white;
+    bottom:15px;
+    right:15px;
+    border-radius:5px;
+}
