@@ -1,6 +1,6 @@
 body{
 
-    background-color:#373B69;
+    background-color:#16161a;
     height:100vh;
     font-family:"Poppins",sans-serif;
     display:flex;
@@ -13,6 +13,18 @@ main{
     display:flex;
     flex-wrap: wrap;
 }
+
+h2{
+    color:#9923dd;
+    transition: letter-spacing 2s ease-out, color 2s ease-out;
+}
+
+h2:hover{
+letter-spacing: 2px;
+color:#fff;
+border-radius:5px;
+}
+
 .movie{
     width:300px;
     padding:2rem;
@@ -23,12 +35,17 @@ main{
     width:100%;
     height:400px;
     object-fit:cover;
+    transition: width 1s ease-out, height 1s ease-out
+}
+.movie img:hover{
+    width:102%;
+    height:420px;
 }
 
 .movie-info{
     display:flex;
     justify-content:space-between;
-    background-color:#37305c;
+    background-color:#712f97;
     color:white;
     border-radius:5px;
     
@@ -39,7 +56,7 @@ main{
     margin-left:1rem;
     padding:0.5rem;
     border-radius:5px;
-    background-color:#5748a3;
+    background-color:#712f97;
     
     
 }
@@ -47,8 +64,9 @@ main{
 .movie span{
     padding:0.5rem;
     margin:1.3rem;
-    background-color:#483a8d;
+    background-color:#712f97;
     border-radius:5px;
+    border:2px solid white;
 }
 
 .movie span.green{
@@ -67,14 +85,6 @@ color:rgb(197, 43, 43);
 }
 
 
-
-
-
-
-
-
-
-
 p{
     width:100%;
     background-color:#37305c;
@@ -91,7 +101,7 @@ header{
     width:100%;
     height:4%;
     justify-content:center;
-    background-color:#37305c;
+    background-color:#712f97;
     padding:2rem;
    
     
@@ -100,6 +110,7 @@ header{
 
 .search::placeholder{
     color:white;
+    font-weight:bold;
 }
 
 
@@ -109,13 +120,15 @@ header{
 }
 
 .search{
-    border-radius:50px;
+    border-radius:20px;
     background-color:transparent;
-    border:2px solid #503bbb;
+    border:1px solid #fdfdfd;
+    padding:12px
     
 }
 
 
 .btn{
-    border-radius:5px;
+    border-radius:6px;
+    height:35px;
 }

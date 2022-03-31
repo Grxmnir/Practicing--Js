@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Serif+4:ital@1&display=swap');
+
+
+
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+    font-family: 'Source Serif 4', sans-serif;
+    background-image:url(bg.jpg)
+}
+
+.card{
+    background-color:#000000d0;
+    color:#fff;
+    padding:2em;
+    border-radius:30px;
+    max-width:300px;
+    width:100%;
+    margin:1em;
+    font-family:inherit;
+    
+}
+
+.search{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+.searchbar{
+border:none;
+outline:none;
+background-color:#505052;
+padding:0.5em;
+border-radius:23px;
+font-family:inherit;
+font-size:120%;
+color:#fff;
+}
+
+
+
+.searchbar::placeholder{
+    color:white;
+    font-family:inherit;
+    
+}
+
+.btn{
+   border-radius:50%;
+   padding:0.5em;
+   outline:none;
+   border:none;
+   margin:0.5em;
+   background-color:#505052;
+   color:white;
+   height:40px;
+   
+}
+
+.btn:hover{
+background-color:#82828b;
+cursor:pointer;
+transition: 0.5s ease-in-out;
+}
+
+.degrees{
+margin:0;
+}
+
+.flex{
+    display:flex;
+    align-items: center;
+}
+
+.flex1{
+    display:flex;
+    justify-content:space-between;
+}
+
+
+

@@ -1,4 +1,4 @@
-const text = "Esse tal de dejota é embaçado demais";
+const text = "This will keep on repeating forever";
 
 let index = 0;
 
